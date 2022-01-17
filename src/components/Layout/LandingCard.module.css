@@ -1,0 +1,63 @@
+.landingcard {
+    width: 100%;
+    height: 560px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+}
+.title {
+    width: 90%;
+    margin: auto;
+    text-align : start; 
+    font-size: 2rem;
+    padding: 0 1rem;
+}
+.description{
+    width: 80%;
+    margin: auto;
+    text-align: start; 
+}
+.image {
+    margin: auto;
+}
+
+.image img {
+    width: 450px;
+    height: 450px;
+    filter: drop-shadow(0 0 0.75rem rgb(220, 110, 20));
+}
+
+
+@media (max-width: 750px) {
+    .landingcard {
+        grid-template-columns: none;
+        grid-template-rows: 50% 50%;
+        height: 670px;
+    }
+    .image {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .image img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .title{
+        text-align : center; 
+        font-size: 1.2rem;
+        padding: 0;
+    }
+    .description{
+        text-align: center; 
+    }
+}
