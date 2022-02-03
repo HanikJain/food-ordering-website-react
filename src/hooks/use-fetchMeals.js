@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default async function useFetchMeals() {
-    const response = await fetch("https://react-http-f4a5a-default-rtdb.firebaseio.com/meals.json")
+    const response = await fetch(process.env.API)
     const data = await response.json();
     
     let meals = [];
