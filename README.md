@@ -3,7 +3,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Project URL
-[https://react-http-f4a5a.web.app/]
+https://react-http-f4a5a.web.app/
 
 ## Available Scripts
 
